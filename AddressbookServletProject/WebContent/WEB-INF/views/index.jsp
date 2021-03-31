@@ -12,7 +12,7 @@
 <body>
 
 	<h3>돌아온 주소록 서블릿</h3>
-	<h3>돌아온 목록</h3>
+	<h3>목록</h3>
 	
 	<form action="<c:url value='/abs'/>">
 	<input type="hidden" name="action" value="search">

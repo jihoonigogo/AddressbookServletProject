@@ -18,7 +18,7 @@ import com.Addressbook.dao.AddressbookVo;
 //@WebServlet("/abs")
 @WebServlet(name="AddressbookServlet", urlPatterns="/abs")
 public class AddressbookServlet extends HttpServlet {
-	AddressbookDao dao = new AddressbookImpl();
+	
 	
 	
 	@Override
@@ -35,7 +35,7 @@ public class AddressbookServlet extends HttpServlet {
 			Long id = Long.valueOf(req.getParameter("id"));					
 			dao.delete(id);
 			resp.sendRedirect(req.getContextPath()+ "/abs");
-			//목록화면으로 돌아가는거 실패..
+			
 //			RequestDispatcher rd = 
 //					getServletContext().getRequestDispatcher("/WEB-INF/views/index.jsp");
 //			rd.forward(req, resp);

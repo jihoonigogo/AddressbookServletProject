@@ -8,8 +8,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>돌아온 주소록 서블릿</h1>
-	<h3>돌아온 새 주소 등록</h3>
+	<h1>주소록 서블릿</h1>
+	<h3>새 주소 등록</h3>
 
 	<form action="<c:url value='/abs'/>" method="post">
 	

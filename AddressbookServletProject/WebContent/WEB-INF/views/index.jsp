@@ -12,11 +12,10 @@
 <body>
 
 	<h3>돌아온 주소록 서블릿</h3>
-	<h3>목록</h3>
-	
+	<h3>목록<c:if test="${ keyword != null }">(검색어 ${keyword})</c:if></h3>
 	<form action="<c:url value='/abs'/>">
 	<input type="hidden" name="action" value="search">
-	<input type="text" name="keyword" >
+	<input type="text" name="keyword" id="keyword" >
 	<input type="submit" value="검색">	
 	</form>
 	

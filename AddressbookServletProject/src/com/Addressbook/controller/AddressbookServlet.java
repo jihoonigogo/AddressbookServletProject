@@ -43,8 +43,8 @@ public class AddressbookServlet extends HttpServlet {
 		}else if("search".equals(action)){
 			String keyword = req.getParameter("keyword");
 			List<AddressbookVo> list = dao.search(keyword);
-			req.setAttribute("list", list);
-			//resp.sendRedirect(req.getContextPath()+ "/abs");
+			req.setAttribute("list", list); //리스트 
+			req.setAttribute("keyword", keyword);	//검색어		
 			RequestDispatcher rd = 
 					getServletContext().getRequestDispatcher("/WEB-INF/views/index.jsp");
 			rd.forward(req, resp);

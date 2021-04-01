@@ -12,7 +12,7 @@
 	<h3>새 주소 등록</h3>
 
 	<form action="<c:url value='/abs'/>" method="post">
-	
+	<fieldset>
 		<input type="hidden" name="action" value="insert"/>
 		<p>이름</p> 
 		<p><input type="text" name="name" id="name"></p>
@@ -21,6 +21,7 @@
 		<p>집전화</p>
 		<p><input type="text" name="tel" id="tel"></p>
 		<input type="submit" value="주소 등록">
+	</fieldset>
 	</form>
 
 </body>
